@@ -34,3 +34,5 @@ group :production do
   gem 'pg', '1.2.3'
 end
 gem 'rexml'
+gem 'bootstrap-sass', '3.4.1'
+gem 'rails-controller-testing'
