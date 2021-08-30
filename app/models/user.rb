@@ -6,4 +6,12 @@ class User < ApplicationRecord
             format: {with: valid_regex}, uniqueness: true
   has_secure_password
   validates :password, presence: true, length: {minimum: 6}
+
+  # Returns a hash digest of a given string
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+
+
 end
