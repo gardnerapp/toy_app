@@ -6,7 +6,9 @@ class User < ApplicationRecord
   validates :email, presence: true, length: {maximum: 255},
             format: {with: valid_regex}, uniqueness: true
   has_secure_password
-  validates :password, presence: true, length: {minimum: 6}
+  validates :password, presence: true, length: {minimum: 6}, allow_nil: true
+  # has secure_password has seperate validationthus allow nil wont let confilct arise
+  # allow nil is for test
 
   # remembers the user in the DB for persistent sessions
   def remember
