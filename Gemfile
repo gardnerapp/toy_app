@@ -5,7 +5,7 @@ ruby '3.0.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
-gem 'puma',       '5.3.1'
+gem 'puma',       '5.6.4'
 gem 'sass-rails', '6.0.0'
 gem 'webpacker',  '5.4.0'
 gem 'turbolinks', '5.2.1'

@@ -119,9 +119,11 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.4-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.12.4-x86_64-linux)
+      racc (~> 1.4)
     pg (1.2.3)
     public_suffix (4.0.6)
-    puma (5.3.1)
+    puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -222,6 +224,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   bcrypt (= 3.1.13)
@@ -234,7 +237,7 @@ DEPENDENCIES
   jbuilder (= 2.10.0)
   listen (= 3.4.1)
   pg (= 1.2.3)
-  puma (= 5.3.1)
+  puma (= 5.6.4)
   rack-mini-profiler (= 2.3.1)
   rails (~> 6.1.4, >= 6.1.4.1)
   rails-controller-testing
